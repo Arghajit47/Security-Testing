@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="2023-07-05-ZAP-Report-/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2023-07-05-ZAP-Report-/themes/original/main.css" rel="stylesheet">
+<link
+	href="2023-07-05-ZAP-Report-/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2023-07-05-ZAP-Report-/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Wed 5 Jul 2023, at 14:02:53</span>
+		</p>
+		<p>ZAP Version: 2.12.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							
+							
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://vulnweb.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						<span>None</span>
+						
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%"><col
+							style="width: 11.666666666666666%">
+						<col style="width: 11.666666666666666%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="6">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">False Positive</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(40.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://vulnweb.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(4)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(80.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://vulnweb.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (202 bytes)</summary>
+				
+				<pre><code>GET http://vulnweb.com/robots.txt HTTP/1.1
+Host: vulnweb.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (155 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Server: nginx/1.19.0
+Date: Wed, 05 Jul 2023 08:30:18 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (153 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.19.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://vulnweb.com</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (191 bytes)</summary>
+				
+				<pre><code>GET http://vulnweb.com HTTP/1.1
+Host: vulnweb.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (239 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Wed, 05 Jul 2023 08:30:17 GMT
+Content-Type: text/html
+Content-Length: 4018
+Last-Modified: Tue, 28 Jul 2020 09:20:49 GMT
+Connection: keep-alive
+ETag: &quot;5f1fedf1-fb2&quot;
+Accept-Ranges: bytes
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4018 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;Acunetix Web Vulnerability Scanner - Test websites&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+@import url(&quot;style.css&quot;);
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+&lt;center&gt;
+&lt;br&gt;
+
+&lt;a href=&#39;https://www.acunetix.com/&#39;&gt;&lt;img src=&#39;acunetix-logo.png&#39; border=&#39;0&#39; alt=&quot;Acunetix website security&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;div&gt;Vulnerable test websites for &lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/&#39;&gt;Acunetix Web Vulnerability Scanner&lt;/a&gt;.&lt;/div&gt;
+
+&lt;table id=&quot;one-column-emphasis&quot; summary=&quot;Acunetix test websites&quot; style=&quot;width:60%&quot;&gt;
+    &lt;colgroup&gt;
+    	&lt;col&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;th scope=&quot;col&quot;&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;&lt;b&gt;URL&lt;/b&gt;&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;&lt;b&gt;Technologies&lt;/b&gt;&lt;/th&gt;
+			&lt;th scope=&quot;col&quot;&gt;&lt;b&gt;Resources&lt;/b&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;SecurityTweets&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testhtml5.vulnweb.com/&#39;&gt;http://testhtml5.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;nginx, Python, Flask, CouchDB&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/html5-website-security/&#39;&gt;Review&lt;/a&gt; Acunetix HTML5 scanner or &lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/crawling-html5-javascript-websites/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;Acuart&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testphp.vulnweb.com/&#39;&gt;http://testphp.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Apache, PHP, MySQL&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/php-security-scanner/&#39;&gt;Review&lt;/a&gt; Acunetix PHP scanner or &lt;a href=&#39;https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;Acuforum&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testasp.vulnweb.com/&#39;&gt;http://testasp.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;IIS, ASP, Microsoft SQL Server&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/sql-injection/&#39;&gt;Review&lt;/a&gt; Acunetix SQL scanner or &lt;a href=&#39;https://www.acunetix.com/websitesecurity/sql-injection/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;Acublog&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testaspnet.vulnweb.com/&#39;&gt;http://testaspnet.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;IIS, ASP.NET, Microsoft SQL Server&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/network-vulnerability-scanner/&#39;&gt;Review&lt;/a&gt; Acunetix network scanner or &lt;a href=&#39;https://www.acunetix.com/blog/articles/network-vulnerability-assessment-gotchas-avoid/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+		&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;REST API&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://rest.vulnweb.com/&#39;&gt;http://rest.vulnweb.com/&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Apache, PHP, MySQL&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/blog/articles/rest-api-security-testing-acunetix/&#39;&gt;Review&lt;/a&gt; Acunetix scanner or &lt;a href=&#39;https://www.acunetix.com/blog/articles/rest-api-security-testing-acunetix/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&quot;background-color:lightgray;width:60%;text-align:center;font-size:14px&quot;&gt;
+&lt;p style=&quot;padding-left:140px;padding-right:140px&quot;&gt;&lt;b&gt;Warning&lt;/b&gt;: This site hosts intentionally vulnerable web applications. You can use these applications to understand how programming and configuration errors lead to security breaches. We created the site to help you test Acunetix but you may also use it for manual penetration testing or for educational purposes. It will help you learn about vulnerabilities such as SQL Injection, Cross-site Scripting (XSS), Cross-site Request Forgery (CSRF), and many more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Frame-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://vulnweb.com/acunetix-logo.png</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (238 bytes)</summary>
+				
+				<pre><code>GET http://vulnweb.com/acunetix-logo.png HTTP/1.1
+Host: vulnweb.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+Referer: http://vulnweb.com
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (240 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Wed, 05 Jul 2023 08:30:18 GMT
+Content-Type: image/png
+Content-Length: 4474
+Last-Modified: Thu, 19 Jun 2014 11:18:40 GMT
+Connection: keep-alive
+ETag: &quot;53a2c710-117a&quot;
+Accept-Ranges: bytes
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4474 bytes)</summary>
+				
+				<pre><code>PNG
+
+   IHDR  	   *    &#39;®H   sRGB ®Îé   gAMA  ±üa   	pHYs  .&quot;  .&quot;ªâÝ   tEXtSoftware Paint.NET v3.5.11GóB7  éIDATx^í	´EÉ¼$(Ì¸¨ ¢&quot;( ,Ñ#ÁsT@EEePTWQ6Ã&quot;(èQ
+*ëÑ o²/Íÿ×=©TnUwõÌ¼`ÿç|&#39;/3Ý5=Ý}oWÝ{«fZ­Zµ®ÄâóâOâå¢Hë³ÄBñO±§XALµ¦gÿÖªUk z«8IÜ&quot;wØXÄ´ð÷©Ví$jÕ þ,|C&quot;&#39;ñ	aíw³ W2ê¿X0}Î´v£5{b¬µØVì*vËØ%{÷V;7Û«V­&#39;¤ª:Ãµßcb1êhËàeô;cÄÕbx¼Å5âX1¯Ýh®5W«ÖEUÄ.ÂÚï
+1ÕqêNâºkNqo,åR¸_ÌÖ=ZOUu+ßwEâbªUÍIÈ7gGeð½@çWeW«ÖòªªNÍ?G	²#ÃPá¶Ä![ÞOø5Y3ûøZµ7õâ$FEåÄ&amp;bqKfÀSÉmb¢Ôx£ØW#Î?ßûW+ª¼b*b¬ùLñnñ1_p§ÅÅj¢¬hÓ:&gt;¨&quot;«ÉÚ|ñÔ|ø¢8U!N\®O¿Åq¼H¼O*N?|ö·Ä®b*÷{Ä&amp;ÂÝ\¹n±m E±¶f¸d +ýÄ#Â2â©à1qà¸%;¬~.Üñu1]ÆÅãEÔüU¤£ÿ¤¸VXëó°ø¥ØJpqcâf´ñ×¢®V{O¾Èõs^ým¯¹Vûõ]sîO½êgô/a}ÙÅ;DÔãóû]Ùßjw±p·£&amp;ÂÕ¶Â}?F.mam»²âhµQÑZYÆyc¬Ãf~»ÑìG
+è)âûâQa]Ä8ç.õþÕ¢¸ép:w	«2ðä{º¸µßoEQùgµÇùôÅ0Ñ:¿7
+´© ïï¿ã®:ül*Ë&lt;,þ&amp;61á$¬}àpµ°¶ûpµ£9&quot;+ºHÛP_ááF{Vk%%ñËXÉ	í±9½&lt;Q^*nÖI)Ë¿EÈ Ë8	nôóµ*·-¥Qu¯÷:¯¥p 7&quot;÷ïÂj/GÄ!ciªÌß	k[8VÄÄPâlaí{¹à{ÚN¤ñÏ8G£Ú³æuµ-qsöòäv¡«g½^ä$Ö×kßª&lt;(xªøE&#39;q(ÓÕq(u_OX%Î½ÀÄªëj&#39;êz8µÍEHûk¿Ä²Ï³êHâ é¡½@½9éÞ*YïÇ9	ÜÚÏ|G[Û¸pa_#\¢è&lt;Ñô,A,ÉÚ?n9©~°äo^³¶uùðTÃp$±*kÇÖ y(ôakY&#39;Ñkm(,S19lÒ±Mè6t³NHÆÍÉáB³=1¢î¤«¾,èÖ[ûùÄ9oknNJréñð`XE ±%=nÐøþ#Ü1ûòà$nßdu^+Ú}T#bÎÜý®¾8o
+k_ úNaEï1wk_à:Ì®è%\Ì	9ó»Ý«T&#39;Xû :_dÍ¬m~¸	¥Äx£µïbÏG+ÚcÍâÍd4Û:!ÞOu_Ä´Úp	9µ}Îiâi¢H¤A­!½Ry8¶\£î$xrÏ!z&amp;aí¤¬CbÆ¤µÐ[°22¾xX/¬6 ËÍW­¨â$°Ê¶­ýÿ¸î×ëaCïymáji»Ñíãáò ãªøÒÙýÿþÓ H_V[9 [ëÉL±l$îùþ&lt;u_(|² î£¨ÑÇ­6XÂbOnÑÁ×å&#39;Âj¸v!M¥@îikß	ÄÐÃºqV\kÉ¹k6ep·{¸&lt;°PÇNÍBH\Dÿä¸c¯qÂ­öÀr±^iÌ*AØ·V1&#39;7ªNãIòüaµCìÈêIR#`mO¯ñù&quot;UMrT{B½©vèSÂÚ¨­aèa½w°ä:ÖAñõÅuâ¢ÙkÖ¶½ÀpÂÆ
+VþAT1N°bÕ®å$XxÄÚ,VçP¤¼°+¤Quo)zªæ!ùbõ&#39;k[ÆáUE Üjvá$cqo[û/d¬×gKN¢=Ö!CëWÉ5ÅÎb;££ú,z,óÄù¢_»Û¦5¶åbø&#39;$ÑBsþ}&#39;AµíÑbE&#39;Ák}ªB©~F^e(àI&lt;L¨[COáa8	ã,ªbÍ¡úóÕ&quot;¤I&#39;!#ÛÉ3ºªLæY&gt;¡&#39;«¯ m·×gûöÊ{²¦]Wrz­Ü$³bµí;	Òp¡Ä §þ¢ âÑ¥ê\á·[
+W[k;à³6T%ä|®å$ÐÂjÃç S×Ié\.P/aH¯ÁJÖbUÙË]iÕ´ïy^[U xçëHaªFâÈ7µ	~Û¾ ìoÜpu©Qt7*&quot;#á·¾(kýÌU&lt;L&#39;AöçÂj&#39;çbQô°&gt;MÝôì&gt;ÏàR¹DÆÞíîË1àx¶g;Ó¾ F`ôt±¹;Ñ¾3õÚÕvY©?ÊÊìUô(ÏöÛöùvà©VSèU£è$ò¹©*ë$Hg[ÛzVliNÙuyÀ±&quot;w¦cÌ[zÆÊ=.uGãNçd7à4Qw#Óú{m½v§³M¬â*T¼Ä´à^à©è·];IËI0[ÔÚnÐXÔa;	z7	«-z²Û&quot;uÄþ¡¥Â4çÆÇ:ÅXçzïÇ8KN¥k(úÿ^Þû©PLä	.Ö	bi°^ÅV Ëw¡12Oi¢Âúl&amp;UÑòà$Þ/¬íÍ(:ÐªÛ9ÄY²k&#39;qªgh)Ü¥@7u¢ÿâ½_²ÝYe,Ë­Þû)0sÀR¦R3&amp;J§­¶}&#39;Á´òPàúAõ2¬Ï¥2¯B¥FÉIb@@à °4L&#39;+(samX ¹ã$.ó-léH¾¦þÿ÷~î£¡ä¹#ýÿhïýü(3s¬©¹z_[íúN(´nB?b#1±²õ¹ôRW{âYFÏkV[Ãr¤*C5ÖAPë8ÆÔ«àZÍUr!RÇIÜìZ
+ïÍ¢=¼÷R`	±ôw/éØ;®Ñr½:é7e¾|T&quot; t¿°Úõb¡µ-ÆJO£ª²#|ÿÐq¦:I®ÕFo­6,&#39;.Ö¶ô ª^sº2FmÇN&quot;¦^ÇÈJSÖþLj³^§V&quot;Ô»é8&lt;CK¡;S³´¾µMX¸#ýÍ÷XÛáþFÔ¤+Ö´N°RQªÑE³ÚËIÄz4Ì¬R³¦êó»ÂÔå4õ¹Ì,û¹´OUÕ?ÄË5L&#39;ñamü¦Eq®8fl®Å%Ä:Ö1|SÄÔ`­µ/%ü&lt;TXaËzbweleéÖÁëï³¼÷R`ñÑdäÏ6Þ/Ë&quot;íïÁ;ëf^&#39;¯^V8ªë¬¶r,&#39;Aï&amp;¶¿¦8
+ÆÝnÃ¬ÐÒjîg¹PGRôtä¸B©dØMX¦ ÞâQHÇ=&quot;Î)cJþEQv ¾ûÙ9ôncÃªN¶µ
+×!/ÜcÝÓÐpá¯_é8^ÇYÖíâ½·#ý½÷^
+@±Y|1+øæE:BU.@¡é¹9dXE)&amp;Fiqq#ðó&#39;»qÜ¡¢Nj;Ökb&amp;jhõîa:	ËrpÜe[ôø?Ã£Õ¸­ýà/&quot;´w&#39;A!}¢7íê;ÂÚû³;ôÏÔqÔ9XWîÔRýÍÚÖ6e Ôþ~÷^
+ú.«[ÞCq§V[PtÂâ&#39;ÔZpcÐ5#^À,KzaZ
+Uæ06d.S¿YlcÃSbê*æÐ¥´«(YÛçPçOolÐÞ7dh®BNlþ°±Ã hõdéñÒbù¶#Dh&quot;Ð#°¦è»
+ÅGóÎ×°¥:	þ§k	ÑMdbXÁëÖöô´ÜïÔqWyk+t¤¿×UÝ_,ºÅXúû@ç½Tb%¿{ØJG.Ü@¡.Y1&#39;AÙzlµ#·ì1sÃ²È¯%G(hUËD,&lt;l&#39;0tj¬ý\x0s§ÂÅc¬×ïØÄ¨\ë&quot;gËz©n03ÕIzM|&amp;µYb©Ðwt×í8_yBw¾D¶x.%×Öv1ø®¬¨ÒFÕe1Ð²nÜ*ÐÕ´^9	WMe®
+79«8Å);3°Ö,*Â&#39;èöÛA²ü@ÑÐÐõ0EKùEäJq/¡VQÞ£µäétÄ¡¥°Tå¢Z¶·MÚg©1´^ëÅiucñC+UsÏ¡Hu­÷&quot;Ã,zZ)ÔùÊÆEb(ÕëÊÑd9+4*NÑ=Rø¨2Õß!àiµÉ²qnl§¬`¾÷µ-½ê¢9?M`­/\»É¡±-+C7+KFOvâJo;Ëµí2½Î¼kû2ýÕ&quot;²2¤S®?q¼×çaIL§êoðô8X¤Eçàº¥ö¨øîÀB«0ù%&#39;Èâ(» ±ùH¦ÖJ¸&quot;@LïÛ¿ïö®Ê:Pzö­¥è,1·Ú (s©+ãªºøéµeÔn4Õù9q³mÎâ á×3t¤×÷Î¶KEß¡I4¹¬0R&lt;%ËÇu	Zêfs$ÆùÔø.Lc?V6b,ËB 6Á®^V´BÏðB]Õ2Üe{+¹V1¶õÏÆ^E_ý¶ hå, ¿Æ¯(îD ªI©æýZQüFÐ¤2ÒO³õ]	¤æ¢jÓÚÈ^3V;p8?åa²Jex1Ë(­I-]M4LøÚ@l/¶CZ¿=sÉ.KÖZÚ¶ÊþÏXÍÏñ7uÜ&lt;L#AÙ5ëÒE/ûôìUÖëÇA/ÍqàXþó]õ;Äwçw(Yþºà»³&lt;;ëÒEÄõx²s}Éèç|«p³´l%ì^Åuä¼û+k&amp;2°ÍDjfw RÛzUµÔ!ÔªU«¿tü¬¿l_QvØqa{¬9°&#39;L{¬5]q÷1Nr±©U«Vß´¤d|v5&#39;wE«T6ÞhY¿ØWésfù&quot;æ¸uz´Ö «UëÿUKD.Ý:â0q­`2Su&#39;¶hÏä0miM4ÏæÙgsKòsl_Ý&quot;¬ZµjBÓ¦ÿûóáRÑá    IEND®B`</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>nginx/1.19.0</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://vulnweb.com</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (191 bytes)</summary>
+				
+				<pre><code>GET http://vulnweb.com HTTP/1.1
+Host: vulnweb.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (239 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Server: nginx/1.19.0
+Date: Wed, 05 Jul 2023 08:30:17 GMT
+Content-Type: text/html
+Content-Length: 4018
+Last-Modified: Tue, 28 Jul 2020 09:20:49 GMT
+Connection: keep-alive
+ETag: &quot;5f1fedf1-fb2&quot;
+Accept-Ranges: bytes
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (4018 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;Acunetix Web Vulnerability Scanner - Test websites&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!--
+@import url(&quot;style.css&quot;);
+--&gt;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+&lt;center&gt;
+&lt;br&gt;
+
+&lt;a href=&#39;https://www.acunetix.com/&#39;&gt;&lt;img src=&#39;acunetix-logo.png&#39; border=&#39;0&#39; alt=&quot;Acunetix website security&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;div&gt;Vulnerable test websites for &lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/&#39;&gt;Acunetix Web Vulnerability Scanner&lt;/a&gt;.&lt;/div&gt;
+
+&lt;table id=&quot;one-column-emphasis&quot; summary=&quot;Acunetix test websites&quot; style=&quot;width:60%&quot;&gt;
+    &lt;colgroup&gt;
+    	&lt;col&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;th scope=&quot;col&quot;&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;&lt;b&gt;URL&lt;/b&gt;&lt;/th&gt;
+            &lt;th scope=&quot;col&quot;&gt;&lt;b&gt;Technologies&lt;/b&gt;&lt;/th&gt;
+			&lt;th scope=&quot;col&quot;&gt;&lt;b&gt;Resources&lt;/b&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;SecurityTweets&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testhtml5.vulnweb.com/&#39;&gt;http://testhtml5.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;nginx, Python, Flask, CouchDB&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/html5-website-security/&#39;&gt;Review&lt;/a&gt; Acunetix HTML5 scanner or &lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/crawling-html5-javascript-websites/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;Acuart&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testphp.vulnweb.com/&#39;&gt;http://testphp.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Apache, PHP, MySQL&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/php-security-scanner/&#39;&gt;Review&lt;/a&gt; Acunetix PHP scanner or &lt;a href=&#39;https://www.acunetix.com/blog/articles/prevent-sql-injection-vulnerabilities-in-php-applications/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;Acuforum&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testasp.vulnweb.com/&#39;&gt;http://testasp.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;IIS, ASP, Microsoft SQL Server&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/sql-injection/&#39;&gt;Review&lt;/a&gt; Acunetix SQL scanner or &lt;a href=&#39;https://www.acunetix.com/websitesecurity/sql-injection/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    	&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;Acublog&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://testaspnet.vulnweb.com/&#39;&gt;http://testaspnet.vulnweb.com&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;IIS, ASP.NET, Microsoft SQL Server&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/vulnerability-scanner/network-vulnerability-scanner/&#39;&gt;Review&lt;/a&gt; Acunetix network scanner or &lt;a href=&#39;https://www.acunetix.com/blog/articles/network-vulnerability-assessment-gotchas-avoid/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+		&lt;tr style=&quot;font-size:14px&quot;&gt;
+        	&lt;td&gt;REST API&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&#39;http://rest.vulnweb.com/&#39;&gt;http://rest.vulnweb.com/&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;Apache, PHP, MySQL&lt;/td&gt;
+			&lt;td&gt;&lt;a href=&#39;https://www.acunetix.com/blog/articles/rest-api-security-testing-acunetix/&#39;&gt;Review&lt;/a&gt; Acunetix scanner or &lt;a href=&#39;https://www.acunetix.com/blog/articles/rest-api-security-testing-acunetix/&#39;&gt;learn more&lt;/a&gt; on the topic.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&quot;background-color:lightgray;width:60%;text-align:center;font-size:14px&quot;&gt;
+&lt;p style=&quot;padding-left:140px;padding-right:140px&quot;&gt;&lt;b&gt;Warning&lt;/b&gt;: This site hosts intentionally vulnerable web applications. You can use these applications to understand how programming and configuration errors lead to security breaches. We created the site to help you test Acunetix but you may also use it for manual penetration testing or for educational purposes. It will help you learn about vulnerabilities such as SQL Injection, Cross-site Scripting (XSS), Cross-site Request Forgery (CSRF), and many more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>X-Content-Type-Options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://vulnweb.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://vulnweb.com/robots.txt</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (172 bytes)</summary>
+				
+				<pre><code>GET http://vulnweb.com/robots.txt HTTP/1.1
+Host: vulnweb.com
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+Pragma: no-cache
+Cache-Control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (155 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Server: nginx/1.19.0
+Date: Wed, 05 Jul 2023 08:31:24 GMT
+Content-Type: text/html
+Content-Length: 555
+Connection: keep-alive
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (555 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;404 Not Found&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;404 Not Found&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.19.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;!-- a padding to disable MSIE and Chrome friendly error page --&gt;
+&lt;!-- a padding to disable MSIE and Chrome friendly error page --&gt;
+&lt;!-- a padding to disable MSIE and Chrome friendly error page --&gt;
+&lt;!-- a padding to disable MSIE and Chrome friendly error page --&gt;
+&lt;!-- a padding to disable MSIE and Chrome friendly error page --&gt;
+&lt;!-- a padding to disable MSIE and Chrome friendly error page --&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a></li>
+										<li><a
+											href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a></li>
+										<li><a
+											href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="http://content-security-policy.com/">http://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">HTTP Server Response Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://httpd.apache.org/docs/current/mod/core.html#servertokens">http://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</a></li>
+										<li><a
+											href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</a></li>
+										<li><a
+											href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
